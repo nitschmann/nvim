@@ -1,0 +1,38 @@
+require('nvim-treesitter.configs').setup {
+  ensure_installed = {
+    'c',
+    'bash',
+    'cpp',
+    'css',
+    'diff',
+    'dockerfile',
+    'dot',
+    'git_rebase',
+    'gitcommit',
+    'gitignore',
+    'go',
+    'gomod',
+    'gowork',
+    'hcl',
+    'http',
+    'lua',
+    'java',
+    'jq',
+    'python',
+    'regex',
+    'ruby',
+    'scss',
+    'sql',
+    'terraform',
+    'toml',
+    'vue',
+    'yaml',
+  },
+
+  -- auto install parsers in aysnc manner
+  sync_install = false,
+  auto_install = true,
+  highlight = {
+    enable = true,
+  },
+}
