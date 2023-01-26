@@ -62,6 +62,9 @@ vim.api.nvim_create_autocmd({ 'BufWritePre' }, {
   command = [[lua go_org_imports()]],
 })
 
+
+vim.cmd [[ autocmd BufWritePre * lua vim.lsp.buf.format({ async = true }) ]]
+
 -- wildignore certain dirs
 local ignore_dir_paths = {
   'vendor/**',
