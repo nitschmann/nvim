@@ -11,12 +11,13 @@ local language_servers = {
   'sumneko_lua',
   'marksman',
   'pylsp',
-  'solargraph',
+  -- 'solargraph',
   'sqls',
   'taplo',
   'tsserver',
   'vuels',
   'yamlls',
+  'ruby_ls',
 }
 
 require('mason').setup()
